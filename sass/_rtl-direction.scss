@@ -1,0 +1,42 @@
+body[dir="rtl"]{
+    header{
+        direction: rtl;
+        &::before {
+            clip-path:  polygon(0 0, 100% 0%, 100% 100%, 22% 100%);
+        }
+
+        .header-content {
+           
+            .primary-header {
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 100%);
+                padding-left: 70px;
+                padding-right: 0;
+            }
+
+            .main-header {
+                padding-left: 10px;
+                padding-right: 0;
+                clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+            }
+        }
+        .qr-code-image{
+            transform: translate(-50%, 50%);
+        }
+    }
+
+
+
+    label{
+        span {
+            margin-right: 4rem;
+        }
+    }
+    .checkbox {
+        & + label {
+            &::after {
+                right: 0;
+            }
+        }
+    }
+    
+}

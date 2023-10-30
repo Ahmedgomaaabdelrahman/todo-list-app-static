@@ -1,0 +1,17 @@
+{
+  "name": "todo-list-static",
+  "version": "1.0.0",
+  "description": "Todo List app using static file with HTML and SASS without using any framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss:compile": "node-sass sass/main.scss css/style.css",
+    "scss:watch": "onchange 'sass/*.scss' -- npm run scss:compile"
+  },
+  "author": "Ahmed Gomaa",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "onchange": "^7.1.0"
+  }
+}
